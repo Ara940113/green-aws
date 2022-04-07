@@ -11,7 +11,7 @@ spring:
   mustache:
     expose-session-attributes: true
   datasource:
-      url: jdbc:mariadb://database-1.cmpcnxinjaqs.ap-northeast-2.rds.amazonaws.com:3306/greendb 
+      url: jdbc:mariadb://database-2.cmpcnxinjaqs.ap-northeast-2.rds.amazonaws.com:3306/greendb 
       driver-class-name: org.mariadb.jdbc.Driver
       username: green
       password: green1234
@@ -19,7 +19,7 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
